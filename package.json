@@ -1,0 +1,22 @@
+{
+  "name": "infra",
+  "version": "1.0.0",
+  "description": "Lambda function examples with AWS services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createDynamo": "aws cloudformation create-stack --stack-name warehouse-dynamo --template-body file://infra/dynamo.yaml",
+    "createS3": "aws cloudformation create-stack --stack-name warehouse-s3 --template-body file://infra/s3.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DwainDRobinson/Nebula.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DwainDRobinson/Nebula/issues"
+  },
+  "homepage": "https://github.com/DwainDRobinson/Nebula#readme"
+}
